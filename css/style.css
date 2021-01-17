@@ -1,7 +1,144 @@
-#output{
+/* body & colors */
+:root {
+    --background-pri-color: #01031a;
+    --innerContainer-color: #becfc0;
+    --navLink: #f8f8f8;
+    --primary-link-color: #000000;
+    --secondary-link-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
+    padding: 0rem;
+    text-align: center;
+    margin: auto;
+    font-family: cursive;
+}
+
+#birthday-input, #lucky-number{
+    margin: 0.5rem;
+    width: 150px;
+    height: 50px;
+    padding: 0.5rem;
+}
+
+
+/* inner container */
+.inner-container{
+    background-color: var(--innerContainer-color);
+    padding: 1rem;
+}
+
+
+/* privacy alert*/
+.privacy{
+   padding: 0.5rem; 
+   background-color: var(--secondary-link-color);
+   width: 600px;
+   margin: auto;
+}
+
+.closebtn{
+    cursor: pointer;
+}
+.closebtn:hover{
+    color: red;
+}
+
+/* button styling */
+.btn{
     padding: 1rem;
     margin: 1rem;
+    font-size: 1rem;
+    background-color: var(--primary-link-color);
+    color: var(--secondary-link-color);
+    border-style: inset;
+}
+
+.btn:hover{
+    background-color: var(--secondary-link-color);
+    color: var(--primary-link-color);
+}
+
+
+/* header */
+.header{
+    background-color: var(--background-pri-color);
+    padding: 1rem;
+    color: var(--navLink);
+}
+
+
+/* output */
+#output{
+    padding: 1rem;
+    margin: 1rem auto;
     height: 100px;
-    width: 200px;
+    width: 300px;
     border: 2px solid black;
+}
+
+
+/* Social links & hovering effects */
+.social {
+    color: var(--navLink);
+    font-size: 1.5rem;
+    padding: 0rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.facebook:hover {
+    color: blue;
+    transform: scale(1.02);
+}
+
+.twitter:hover {
+    color: rgb(33, 124, 184);
+}
+
+.instagram:hover {
+    color: rgb(196, 13, 13);
+}
+
+.linkedin:hover {
+    color: rgb(2, 34, 179);
+}
+
+.github:hover {
+    color: rgb(77, 77, 77);
+    opacity: 0.8;
+}
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+/* footer */
+.footer {
+    background-color: var(--background-pri-color);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-bottom-right-radius: 2rem;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+    margin-top: 30px;
+}
+
+.footer-head {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: cursive;
+    color: var(--navLink);
+}
+
+.footer-div {
+    color: var(--navLink);
 }

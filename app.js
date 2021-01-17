@@ -3,6 +3,7 @@ var luckyNum = document.getElementById("lucky-number").value;
 var output = document.getElementById("output");
 
 
+
 function clickHandler() {
     var checkLuckyNum = isNaN(luckyNum);
     if (checkLuckyNum == true || luckyNum.length == 0) {

@@ -7,24 +7,39 @@
     <title>Are you lucky!</title>
     <link rel="icon" type="text/css" href="images/logo4.png">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/all.css" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="container">
-        <h1>Is our birthday lucky!</h1>
-        <h2>Let's find it out🔎. </h2>
+
+        <div class="header">
+            <h1>Is Your birthday lucky!</h1>
+            <h2>Let's find it out🔎 </h2>
+        </div>
+
         <div class="inner-container">
-            <h3>Please enter your birthday(DD/MM/YYYY).</h3>
+            <h3>Please enter your birthday(DD/MM/YYYY)</h3>
             <input id="birthday-input" type="date" value="1996-06-15">
             <br>
             <h3>Please enter your lucky number</h3>
             <input id="lucky-number" type="text">
             <br>
-            <button onclick="clickHandler()" class="">find your luck</button>
-            
-                <div id="output"></div>
-                <div id="opImage"></div>
-            
+            <button onclick="clickHandler()" class="btn">find your luck</button>
+
+            <div id="output"></div>
+            <div id="opImage"></div>
+
+            <div class="privacy">
+                <a href="" download="Privacy_policy.docx" style="color:#096101;">Privacy Policy:</a>
+                We do not store or share your information.
+                <span class="closebtn" onClick="this.parentElement.style.display='none';">
+                    &times;   <!-- code for cross sign or close button -->
+                </span>
+
+            </div>
+
         </div>
 
         <footer class="navigation footer">
