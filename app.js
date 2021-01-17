@@ -1,4 +1,4 @@
-var birthdate = document.getElementById("birthday").value;
+var birthdate = document.getElementById("birthday-input").value;
 var luckyNum = document.getElementById("lucky-number").value;
 var output = document.getElementById("output");
 
@@ -10,7 +10,7 @@ function clickHandler() {
     }
     else {
         var [year, month, day] = birthdate.toString().split('-');
-       
+
         year = Number(year);
         month = Number(month);
         day = Number(day);
@@ -21,16 +21,15 @@ function clickHandler() {
         if (remainder == 0) {
             output.innerHTML = "Congo!🥳, Your Birthdate is lucky for you.";
         }
+        else if (remainder == 1) {
+            output.innerHTML = "Oops! You missed being lucky by 1 day.";
+        }
         else {
-            if (rem == 1) {
-                output.innerHTML = "Oops! You missed being lucky by 1 day.";
-            }
-            else {
-                output.innerHTML = "Oops! You missed being lucky by " + remainder + "days.";
-            }
+            output.innerHTML = "Oops! You missed being lucky by " + remainder + "days.";
         }
     }
 }
+
 
 function sumOfDigit(num) {
     var sum = 0;
