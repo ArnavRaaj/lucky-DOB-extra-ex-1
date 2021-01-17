@@ -1,15 +1,17 @@
-var birthdate = document.getElementById("birthday-input").value;
-var luckyNum = document.getElementById("lucky-number").value;
+var birthdateRef = document.getElementById("birthday-input");
+var luckyNumRef = document.getElementById("lucky-number");
 var output = document.getElementById("output");
 
 
 
 function clickHandler() {
-    var checkLuckyNum = isNaN(luckyNum);
-    if (checkLuckyNum == true || luckyNum.length == 0) {
-        alert("Please enter a valid digit.");
+    var birthdate = birthdateRef.value;
+    var checkLuckyNum = isNaN(luckyNumRef.value);
+    if (checkLuckyNum == true || luckyNumRef.value.length == 0) {
+        alert("Please enter a valid digit as lucky number.");
     }
     else {
+        var luckyNum = luckyNumRef.value;
         var [year, month, day] = birthdate.toString().split('-');
 
         year = Number(year);
@@ -22,11 +24,11 @@ function clickHandler() {
         if (remainder == 0) {
             output.innerHTML = "Congo!🥳, Your Birthdate is lucky for you.";
         }
-        else if (remainder == 1) {
-            output.innerHTML = "Oops! You missed being lucky by 1 day.";
-        }
+        // else if (remainder == 1) {
+        //     output.innerHTML = "Oops! You missed being lucky by 1 day.";
+        // }
         else {
-            output.innerHTML = "Oops! You missed being lucky by " + remainder + "days.";
+            output.innerHTML = "Oops! You missed being lucky by " + remainder + " days.";
         }
     }
 }
