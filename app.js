@@ -24,9 +24,9 @@ function clickHandler() {
         if (remainder == 0) {
             output.innerHTML = "Congo!🥳, Your Birthdate is lucky for you.";
         }
-        // else if (remainder == 1) {
-        //     output.innerHTML = "Oops! You missed being lucky by 1 day.";
-        // }
+        else if (remainder == 1) {
+            output.innerHTML = "Oops! You missed being lucky by 1 day.";
+        }
         else {
             output.innerHTML = "Oops! You missed being lucky by " + remainder + " days.";
         }

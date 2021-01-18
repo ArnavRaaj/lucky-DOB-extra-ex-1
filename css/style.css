@@ -8,6 +8,10 @@
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     max-width: 1200px;
@@ -17,7 +21,8 @@ body {
     font-family: cursive;
 }
 
-#birthday-input, #lucky-number{
+#birthday-input,
+#lucky-number {
     margin: 0.5rem;
     width: 150px;
     height: 50px;
@@ -26,29 +31,13 @@ body {
 
 
 /* inner container */
-.inner-container{
+.inner-container {
     background-color: var(--innerContainer-color);
     padding: 1rem;
 }
 
-
-/* privacy alert*/
-.privacy{
-   padding: 0.5rem; 
-   background-color: var(--secondary-link-color);
-   width: 600px;
-   margin: auto;
-}
-
-.closebtn{
-    cursor: pointer;
-}
-.closebtn:hover{
-    color: red;
-}
-
 /* button styling */
-.btn{
+.btn {
     padding: 1rem;
     margin: 1rem;
     font-size: 1rem;
@@ -57,14 +46,14 @@ body {
     border-style: inset;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--secondary-link-color);
     color: var(--primary-link-color);
 }
 
 
 /* header */
-.header{
+.header {
     background-color: var(--background-pri-color);
     padding: 1rem;
     color: var(--navLink);
@@ -72,7 +61,7 @@ body {
 
 
 /* output */
-#output{
+#output {
     padding: 1rem;
     margin: 1rem auto;
     height: 100px;
@@ -112,6 +101,7 @@ body {
     color: rgb(77, 77, 77);
     opacity: 0.8;
 }
+
 .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
@@ -141,4 +131,36 @@ body {
 
 .footer-div {
     color: var(--navLink);
+}
+
+
+/* privacy alert*/
+.privacy {
+    padding: 0.5rem;
+    background-color: var(--secondary-link-color);
+    width: 450px;
+    margin: 0.5rem auto;
+}
+
+.closebtn {
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: red;
+}
+
+
+/* RESPONSIVE FOR MOBILE*/
+
+@media only screen and (max-width:468 px) {
+    .privacy {
+        padding: 1rem;
+        width: 200px;
+        margin: auto;
+    }
+
+    .social {
+        font-size: 1rem;
+    }
 }
